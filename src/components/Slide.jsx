@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import MethodologyModal from "./MethodologyModal.jsx";
 
 export default function Slide({
 	heading,
@@ -6,9 +7,11 @@ export default function Slide({
 	body,
 	image,
 	theme,
+	methodology,
 	isActive = false,
 	tables = [],
 }) {
+	const [showMethodology, setShowMethodology] = useState(false);
 	return (
 		<section
 			className='min-h-screen w-full flex items-center justify-center px-6 md:px-10 snap-start'
@@ -160,7 +163,25 @@ export default function Slide({
 						</div>
 					)}
 				</div>
+				{methodology && (
+					<div className='md:col-span-2'>
+						<button
+							type='button'
+							onClick={() => setShowMethodology(true)}
+							className='underline underline-offset-4 hover:opacity-80 transition text-sm'
+							style={{ color: theme?.accent || theme?.foreground || "#ffffff" }}
+						>
+							View methodology
+						</button>
+					</div>
+				)}
 			</div>
+			<MethodologyModal
+				open={!!showMethodology}
+				onClose={() => setShowMethodology(false)}
+				paragraphs={Array.isArray(methodology) ? methodology : []}
+				theme={theme}
+			/>
 		</section>
 	);
 }

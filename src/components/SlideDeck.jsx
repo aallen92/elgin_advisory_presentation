@@ -103,6 +103,7 @@ export default function SlideDeck() {
 							theme={theme}
 							isActive={active === i}
 							tables={s.tables || (s.table ? [s.table] : undefined)}
+							methodology={s.methodology}
 						/>
 					)}
 				</div>

@@ -59,6 +59,10 @@
 		{
 			"slide": 3,
 			"heading": "Policy Risk Ranking - UK Budget '25 | Indicative",
+			"methodology": [
+				"The data points represent the biggest differentials between the views of Market Participants and Policy Makers re: Budget Measures at the Autumn fiscal event.",
+				"Determined by quantifying the assumptions of Market Participants using AI and aggregation tools to create a benchmark, vs. the views and expectations of Policy Makers in our PolicyMakerPanel. This creates a variable by which to measure market pricing"
+			],
 			"tables": [
 				{
 					"centreDivide": true,
@@ -107,6 +111,10 @@
 		{
 			"slide": 4,
 			"heading": "Risk Delta - Market vs Policymakers | Indicative",
+			"methodology": [
+				"The data points are ranked and listed according to size of divergence between the Policy Maker expectation and Market Participant assumption re: Budget Measures at the Autumn fiscal event.",
+				"Determined by quantifying the assumptions of Market Participants via AI and aggregation tools vs the expectations of Policy Makers in our PolicyMakerPanel. This creates a variable by which to measure market pricing."
+			],
 			"tables": [
 				{
 					"headers": ["UK Budget Measures: Widest Margins", "Risk\n Margin", "Margin Scores"],
@@ -143,6 +151,10 @@
 		{
 			"slide": 5,
 			"heading": "Policy Likelihood Ranking",
+			"methodology": [
+				"The data points represent the views of Market Participants vs Policy Makers about the likelihood of policy outcomes in the Autumn fiscal event.",
+				"Determined by quantifying the assumptions of Market Participants via AI and aggregation tools vs the expectations of Policy Makers in our PolicyMakerPanel."
+			],
 			"tables": [
 				{
 					"centreDivide": true,
@@ -203,6 +215,10 @@
 		{
 			"slide": 6,
 			"heading": "Combined Policy Likelihood Ranking",
+			"methodology": [
+				"The data points reveal the most likely scores for policy outcomes - irrespective of owner - in the Autumn fiscal event.",
+				"Determined by quantifying the assumptions of Market Participants via AI and aggregation tools vs the expectations of Policy Makers in our PolicyMakerPanel"
+			],
 			"tables": [
 				{
 					"headers": ["UK Budget Measures: Top [5]", "Category", "Scores", "Owner"],
@@ -244,6 +260,10 @@
 		{
 			"slide": 7,
 			"heading": "Policy Risk Ranking",
+			"methodology": [
+				"The data points represent the biggest differentials between Policy Maker and Market Participants re: policy outcomes over 60 Days and 360 Days.",
+				"Determined by quantifying the assumptions of Market Participants via AI and aggregation tools vs the expectations of Policy Makers in our PolicyMakerPanel."
+			],
 			"tables": [
 				{
 					"centreDivide": true,
