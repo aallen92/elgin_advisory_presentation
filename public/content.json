@@ -6,50 +6,67 @@
 		"accent": "#00FFFF",
 		"fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, \"Helvetica Neue\", Arial"
 	},
+
 	"slides": [
 		{
+			"slide": 1,
 			"heading": "POLICYMAKER ASSUMPTION INDEX (PAX)",
 			"subheading": "Pricing Policy Risks + Likelihood",
 			"body": "September '25 / For presentation purposes"
 		},
 		{
+			"slide": 2,
+			"contents": true,
 			"heading": "Pricing Policy Risk | Content",
-			"tables": [
+			"contentsArray": [
 				{
-					"headers": ["", ""],
-					"rows": [
-						[
-							"Table 1: Risk Pricing (UK Budget)",
-							"Most Over-Priced vs Most Under-Priced Risks | Indicative"
-						],
-						[
-							"Table 2: Risk Delta (UK Budget)",
-							"Policy Makers vs Market Participant Assumptions | Indicative"
-						],
-						[
-							"Table 3: Policy Likelihood Delta (UK Budget)",
-							"Policy Makers vs Market Participant Assumptions | Indicative"
-						],
-						[
-							"Table 4: Policy Likelihood Ranking (UK Budget)",
-							"Policy Makers + Market Participant Assumptions | Indicative"
-						],
-						[
-							"Table 5: Risk Pricing (Ukraine-Russia)",
-							"Most Over-Priced / Most Under-Priced Risks x 60 Days + 360 Days | Indicative"
-						]
+					"orderIndex": 2,
+					"content": [
+						"Table 1: Risk Pricing (UK Budget)",
+						"Most Over-Priced vs Most Under-Priced Risks | Indicative"
+					]
+				},
+				{
+					"orderIndex": 3,
+					"content": [
+						"Table 2: Risk Delta (UK Budget)",
+						"Policy Makers vs Market Participant Assumptions | Indicative"
+					]
+				},
+				{
+					"orderIndex": 4,
+					"content": [
+						"Table 3: Policy Likelihood Delta (UK Budget)",
+						"Policy Makers vs Market Participant Assumptions | Indicative"
+					]
+				},
+				{
+					"orderIndex": 5,
+					"content": [
+						"Table 4: Policy Likelihood Ranking (UK Budget)",
+						"Policy Makers + Market Participant Assumptions | Indicative"
+					]
+				},
+				{
+					"orderIndex": 6,
+					"content": [
+						"Table 5: Risk Pricing (Ukraine-Russia)",
+						"Most Over-Priced / Most Under-Priced Risks x 60 Days + 360 Days | Indicative"
 					]
 				}
 			]
 		},
 		{
-			"heading": "Pricing Policy Risk - UK Budget '25 | Indicative",
+			"slide": 3,
+			"heading": "Policy Risk Ranking - UK Budget '25 | Indicative",
 			"tables": [
 				{
+					"centreDivide": true,
+
 					"headers": [
 						"Scores",
-						"Scoring The Risk: Most Under-Priced",
-						"Scoring The Risk: Most Over-Priced",
+						"Scoring The Risk:\n Most Under-Priced\nMeasures",
+						"Scoring The Risk:\n Most Over-Priced\nMeasures",
 						"Scores"
 					],
 					"rows": [
@@ -88,14 +105,11 @@
 			]
 		},
 		{
+			"slide": 4,
 			"heading": "Risk Delta - Market vs Policymakers | Indicative",
 			"tables": [
 				{
-					"headers": [
-						"UK Budget Measures: Widest Risk Margins",
-						"Risk Margin (Ranking Margins)",
-						"Margin (Scores)"
-					],
+					"headers": ["UK Budget Measures: Widest Margins", "Risk\n Margin", "Margin Scores"],
 					"rows": [
 						[
 							"#1 New Wealth Tax",
@@ -127,14 +141,17 @@
 			]
 		},
 		{
-			"heading": "Policy Likelihood - Market vs Policymakers | Indicative",
+			"slide": 5,
+			"heading": "Policy Likelihood Ranking",
 			"tables": [
 				{
+					"centreDivide": true,
+
 					"headers": [
 						"Policymaker Assumptions (scores)",
 						"Policymaker Assumptions (category)",
-						"UK Budget Measures: Likelihood",
-						"UK Budget Measures: Likelihood",
+						"Policymaker View: (Measures)",
+						"Market Participant View: (Measures)",
 						"Market Assumptions (category)",
 						"Market Assumptions (scores)"
 					],
@@ -184,38 +201,39 @@
 			]
 		},
 		{
-			"heading": "Policy Makers vs Market Participant Assumptions | Indicative",
+			"slide": 6,
+			"heading": "Combined Policy Likelihood Ranking",
 			"tables": [
 				{
-					"headers": ["UK Budget Measures: Top [5]", "Likelihood (Scores)", "Scores", "Owner"],
+					"headers": ["UK Budget Measures: Top [5]", "Category", "Scores", "Owner"],
 					"rows": [
 						[
 							"#1. Tax Threshold Freeze",
-							"Very High",
+							{ "type": "Score", "label": "Quintile", "value": "Very High" },
 							{ "type": "Score", "label": "Score", "value": "85%" },
 							"Market Participant"
 						],
 						[
 							"#2. Pensions Tax Relief Cut",
-							"Very High",
+							{ "type": "Score", "label": "Quintile", "value": "Very High" },
 							{ "type": "Score", "label": "Score", "value": "80%" },
 							"Policymaker View"
 						],
 						[
 							"#3. New Property Tax",
-							"High",
+							{ "type": "Score", "label": "Quintile", "value": "High" },
 							{ "type": "Score", "label": "Score", "value": "75%" },
 							"Market Participant"
 						],
 						[
 							"#4. Dividend + Income Tax Equalised",
-							"High",
+							{ "type": "Score", "label": "Quintile", "value": "High" },
 							{ "type": "Score", "label": "Score", "value": "70%" },
 							"Policymaker View"
 						],
 						[
 							"#5. Gambling Tax",
-							"High",
+							{ "type": "Score", "label": "Quintile", "value": "High" },
 							{ "type": "Score", "label": "Score", "value": "70%" },
 							"Policymaker View"
 						]
@@ -224,16 +242,19 @@
 			]
 		},
 		{
-			"heading": "Risk Margins: Market vs Policymakers | RU - Ukraine | Indicative",
+			"slide": 7,
+			"heading": "Policy Risk Ranking",
 			"tables": [
 				{
+					"centreDivide": true,
+
 					"headers": [
-						"Russia vs Ukraine: 60 Days - Widest Margins",
+						"Market View vs Policymaker View",
 						"Risk Margin (60 Days)",
 						"Scores (60 Days)",
 						"Risk Margin (360 Days)",
 						"Scores (360 Days)",
-						"Russia vs Ukraine: 360 Days - Widest Margins"
+						"Market View vs Policymaker View"
 					],
 					"rows": [
 						[
@@ -281,6 +302,102 @@
 			]
 		},
 		{
+			"slide": 8,
+			"heading": "Ranking Risk Pricing: Russia vs. Ukraine | Indicative (60 Days)",
+			"tables": [
+				{
+					"centreDivide": true,
+
+					"headers": [
+						"Risk Pricing (Scores)",
+						"Most Under-Priced\nPolicy Measures",
+						"Most Over-Priced\nPolicy Measures",
+						"Risk Pricing (Scores)"
+					],
+					"rows": [
+						[
+							{ "type": "Score", "label": "Price", "value": "40%" },
+							"#1. Article 5. Triggered",
+							"#1. US-Ukraine Deal",
+							{ "type": "Score", "label": "Price", "value": "25%" }
+						],
+						[
+							{ "type": "Score", "label": "Price", "value": "30%" },
+							"#2. Ru grey-zone war Intensifies",
+							"=#3. Ru More Battlefield Gains",
+							{ "type": "Score", "label": "Price", "value": "20%" }
+						],
+						[
+							{ "type": "Score", "label": "Price", "value": "25%" },
+							"#3. EU Speed-Up UA Application",
+							"=#3. Ru Assets Unfrozen (Partial)",
+							{ "type": "Score", "label": "Price", "value": "20%" }
+						],
+						[
+							{ "type": "Score", "label": "Price", "value": "10" },
+							"#4. US Inc Weapons Transfers",
+							"#4. China increase Ru support",
+							{ "type": "Score", "label": "Price", "value": "15%" }
+						],
+						[
+							{ "type": "Score", "label": "Price", "value": "10%" },
+							"#5. No More China Tariffs",
+							"#5. No Uprising in Russia",
+							{ "type": "Score", "label": "Price", "value": "10%" }
+						]
+					]
+				}
+			]
+		},
+		{
+			"slide": 10,
+			"heading": "Ranking Risk Likelihood: Russia vs Ukraine | Indicative (60 Days)",
+			"tables": [
+				{
+					"centreDivide": true,
+					"headers": [
+						"Policy Assumptions\n(Category)",
+						"Policymaker x Likelihood\n(60 Days)",
+						"Market Participant x Likelihood\n(60 Days)",
+						"Policymaker Assumptions\n(Category)"
+					],
+					"rows": [
+						[
+							{ "type": "Score", "label": "Quintile", "value": "Very High" },
+							"#1. China-Ru Support",
+							"#1. China-Ru Support",
+							{ "type": "Score", "label": "Quintile", "value": "Very High" }
+						],
+						[
+							{ "type": "Score", "label": "Quintile", "value": "Very High" },
+							"#2. No Ceasefire",
+							"#2. No Ceasefire",
+							{ "type": "Score", "label": "Quintile", "value": "Very High" }
+						],
+						[
+							{ "type": "Score", "label": "Quintile", "value": "High" },
+							"#3. Ru Increase Gray Zone Activity",
+							"#3. US-Ukraine Deal",
+							{ "type": "Score", "label": "Quintile", "value": "High" }
+						],
+						[
+							{ "type": "Score", "label": "Quintile", "value": "High" },
+							"#4. Article 5",
+							"#4. Ru Assets Unfrozen\n(partial)",
+							{ "type": "Score", "label": "Quintile", "value": "High" }
+						],
+						[
+							{ "type": "Score", "label": "Quintile", "value": "High" },
+							"#5. EU Speed-up UA Application",
+							"#5. Ru Battlefield Gains",
+							{ "type": "Score", "label": "Quintile", "value": "High" }
+						]
+					]
+				}
+			]
+		},
+		{
+			"slide": 11,
 			"heading": "Scales for Policy Likelihood / Risk",
 			"tables": [
 				{
@@ -296,10 +413,12 @@
 			]
 		},
 		{
+			"slide": 12,
 			"heading": "ELGIN Advisory",
 			"body": "Rethinking/Risk"
 		},
 		{
+			"slide": 13,
 			"heading": "Contact + Legal",
 			"body": "For more information: Briefings@elginadvisory.com\n\nConfidentiality + Disclosure: This material is not intended to be relied upon as a forecast, research or investment advice, and is not a recommendation, offer or solicitation to buy or sell any securities or to adopt any investment strategy. The opinions expressed are as of date of publication and are subject to change. The information and opinions are derived from proprietary and non-proprietary sources deemed by ELGIN to be reliable, are not necessarily all-inclusive and are not guaranteed as to accuracy. As such, no warranty of accuracy or reliability is given and no responsibility arising in any other way for errors and omissions (including responsibility to any person by reason of negligence) is accepted by ELGIN, its officers, employees or agents. This material may contain 'forward looking' information that is not purely historical in nature. Such information may include, among other things, projections and forecasts. There is no guarantee that any forecasts made will come to pass. Reliance upon information in this material is at the sole discretion of the reader. This material is intended for institutional investors only and not for public distribution. The information provided here is neither tax nor legal advice. Investors should speak to their tax professional for specific information regarding their tax situation. Investment involves risk including possible loss of principal. International investing involves risks, including risks related to foreign currency, limited liquidity, less government regulation, and the possibility of substantial volatility due to adverse political, economic or other developments. These risks are often heightened for investments in emerging/developing markets or smaller capital markets.\n\nAll aspects of the content of the ELGIN Risk Framework including the Index (PAX); Political Cognition Bias; and Political Reaction Function; plus the Government and Policy Stability index (GPSi) and the related Risk Dashboard are confidential and the sole property of Elgin Partnership Ltd. They should only be used by the original recipient with the explicit permission of the author. The contents may also be privileged or exempt from disclosure under applicable law. The author does not accept responsibility for any type of loss arising from unauthorised or authorised use of the contents and reserves the right to be cited and credited for any reference to any information or concepts contained within the material.\n\n 2025 ELGIN Partnership, Ltd. All Rights Reserved. ELGINAdvisory is a pending registered trademark of ELGIN Partnership, Ltd. Registered in England Wales, No. 12511648"
 		}

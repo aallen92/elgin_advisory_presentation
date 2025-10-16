@@ -74,12 +74,15 @@ export default function Slide({
 									key={idx}
 									className='overflow-x-auto rounded-xl border border-white/10 bg-black/20 backdrop-blur max-h-[70vh] overflow-y-auto mx-auto '
 								>
-									<table className='min-w-full table-auto text-sm'>
+									<table className='min-w-full table-fixed text-sm'>
 										{Array.isArray(t?.headers) && t.headers.length > 0 && (
 											<thead>
-												<tr className='border-b border-white/10  '>
+												<tr className='border-b border-[#00FFFF] '>
 													{t.headers.map((h, hi) => (
-														<th key={hi} className='px-4 py-2 font-semibold'>
+														<th
+															key={hi}
+															className='px-4 py-2 font-semibold whitespace-pre-line break-words'
+														>
 															{h}
 														</th>
 													))}
@@ -89,8 +92,18 @@ export default function Slide({
 										{Array.isArray(t?.rows) && t.rows.length > 0 && (
 											<tbody>
 												{t.rows.map((r, ri) => (
-													<tr key={ri} className='border-b border-white/5 last:border-0 text-white'>
+													<tr
+														key={ri}
+														className='border-b border-white/20 last:border-0 text-white hover:bg-white/10 transition-colors duration-200 cursor-pointer'
+													>
 														{r.map((cell, ci) => {
+															const colCount = Array.isArray(r) ? r.length : 0;
+															const dividerIndex = Math.floor((colCount - 1) / 2); // add border on right of middle cell
+															const tdBase = "px-4 py-2 align-top";
+															const tdClass =
+																ci === dividerIndex && t.centreDivide
+																	? `${tdBase} border-r border-[#00FFFF] `
+																	: tdBase;
 															const accent = theme?.accent || theme?.foreground || "#ffffff";
 															const isObj = cell && typeof cell === "object" && "type" in cell;
 															if (
@@ -101,7 +114,7 @@ export default function Slide({
 																"value" in cell
 															) {
 																return (
-																	<td key={ci} className='px-4 py-2 align-top'>
+																	<td key={ci} className={tdClass}>
 																		<span className='group inline-block relative w-full min-h-[2.25rem] text-center'>
 																			<span className='block opacity-100 transition-opacity duration-500 ease-out group-hover:opacity-0'>
 																				{cell.label}
@@ -122,13 +135,13 @@ export default function Slide({
 															}
 															if (isObj && "value" in cell) {
 																return (
-																	<td key={ci} className='px-4 py-2 align-top'>
+																	<td key={ci} className={tdClass}>
 																		<span className='whitespace-pre-line'>{cell.value}</span>
 																	</td>
 																);
 															}
 															return (
-																<td key={ci} className='px-4 py-2 align-top'>
+																<td key={ci} className={tdClass}>
 																	<span className='whitespace-pre-line'>{String(cell)}</span>
 																</td>
 															);

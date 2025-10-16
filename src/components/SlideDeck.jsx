@@ -1,20 +1,22 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Slide from "./Slide.jsx";
+import Contents from "./Contents.jsx";
 
 export default function SlideDeck() {
-	const [slides, setSlides] = useState([]);
-	const [theme, setTheme] = useState({});
 	const [active, setActive] = useState(0);
 	const sectionRefs = useRef([]);
 	const containerRef = useRef(null);
+
+	const [theme, setTheme] = useState({});
+	const [slides, setSlides] = useState([]);
 
 	useEffect(() => {
 		async function load() {
 			try {
 				const res = await fetch("/content.json", { cache: "no-cache" });
 				const data = await res.json();
-				setSlides(data.slides || []);
 				setTheme(data.theme || {});
+				setSlides(data.slides || []);
 			} catch (e) {
 				console.error("Failed to load content.json", e);
 			}
@@ -86,21 +88,20 @@ export default function SlideDeck() {
 			style={{ background: bg, color: fg }}
 		>
 			{slides.map((s, i) => (
-				<div
-					key={i}
-					ref={(el) => (sectionRefs.current[i] = el)}
-					data-index={i}
-					className='snap-start'
-				>
-					<Slide
-						heading={s.heading}
-						subheading={s.subheading}
-						body={s.body}
-						image={s.image}
-						theme={theme}
-						isActive={active === i}
-						tables={s.tables || (s.table ? [s.table] : undefined)}
-					/>
+				<div key={i} ref={(el) => (sectionRefs.current[i] = el)} data-index={i}>
+					{s.contents ? (
+						<Contents contentsArray={s.contentsArray} isActive={active === i} setActive={goTo} />
+					) : (
+						<Slide
+							heading={s.heading}
+							subheading={s.subheading}
+							body={s.body}
+							image={s.image}
+							theme={theme}
+							isActive={active === i}
+							tables={s.tables || (s.table ? [s.table] : undefined)}
+						/>
+					)}
 				</div>
 			))}
 
@@ -144,8 +145,8 @@ export default function SlideDeck() {
 						aria-label='Next slide'
 						title={active >= slides.length - 1 ? "End of deck" : "Next (→, ↓, Space)"}
 					>
-						<span className='text-white/90 mix-blend-luminosity'>Next</span>
-						<span className='relative inline-flex h-6 w-6 items-center justify-center rounded-full bg-black/20 text-white'>
+						<span className='text-black '>Next</span>
+						<span className='relative inline-flex h-6 w-6 items-center justify-center rounded-full bg-black/20 text-black'>
 							{/* Arrow icon */}
 							<svg
 								className='h-4 w-4 transition-transform group-hover:translate-x-0.5'
