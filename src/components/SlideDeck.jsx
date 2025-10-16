@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Slide from "./Slide.jsx";
 import Contents from "./Contents.jsx";
+import Footer from "./Footer.jsx";
 
 export default function SlideDeck() {
 	const [active, setActive] = useState(0);
@@ -91,6 +92,8 @@ export default function SlideDeck() {
 				<div key={i} ref={(el) => (sectionRefs.current[i] = el)} data-index={i}>
 					{s.contents ? (
 						<Contents contentsArray={s.contentsArray} isActive={active === i} setActive={goTo} />
+					) : s.footer ? (
+						<Footer footer={s} theme={theme} />
 					) : (
 						<Slide
 							heading={s.heading}
