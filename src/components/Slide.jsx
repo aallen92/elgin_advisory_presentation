@@ -99,7 +99,7 @@ export default function Slide({
 														{r.map((cell, ci) => {
 															const colCount = Array.isArray(r) ? r.length : 0;
 															const dividerIndex = Math.floor((colCount - 1) / 2); // add border on right of middle cell
-															const tdBase = "px-4 py-2 align-top";
+															const tdBase = "px-4 py-2 align-top truncate";
 															const tdClass =
 																ci === dividerIndex && t.centreDivide
 																	? `${tdBase} border-r border-[#00FFFF] `
@@ -136,13 +136,17 @@ export default function Slide({
 															if (isObj && "value" in cell) {
 																return (
 																	<td key={ci} className={tdClass}>
-																		<span className='whitespace-pre-line'>{cell.value}</span>
+																		<span className='whitespace-pre-line text-wrap'>
+																			{cell.value}
+																		</span>
 																	</td>
 																);
 															}
 															return (
 																<td key={ci} className={tdClass}>
-																	<span className='whitespace-pre-line'>{String(cell)}</span>
+																	<span className='whitespace-pre-line text-wrap'>
+																		{String(cell)}
+																	</span>
 																</td>
 															);
 														})}
