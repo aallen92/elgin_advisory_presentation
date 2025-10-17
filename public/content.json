@@ -16,6 +16,10 @@
 		},
 		{
 			"slide": 2,
+			"descriptor": true
+		},
+		{
+			"slide": 2,
 			"contents": true,
 			"heading": "Pricing Policy Risk | Content",
 			"contentsArray": [
