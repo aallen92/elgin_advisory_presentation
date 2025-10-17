@@ -23,35 +23,35 @@
 					"orderIndex": 2,
 					"content": [
 						"Table 1: Risk Pricing (UK Budget)",
-						"Most Over-Priced vs Most Under-Priced Risks | Indicative"
+						"Most Over-Priced vs Most Under-Priced Risks"
 					]
 				},
 				{
 					"orderIndex": 3,
 					"content": [
 						"Table 2: Risk Delta (UK Budget)",
-						"Policy Makers vs Market Participant Assumptions | Indicative"
+						"Policy Makers vs Market Participant Assumptions"
 					]
 				},
 				{
 					"orderIndex": 4,
 					"content": [
 						"Table 3: Policy Likelihood Delta (UK Budget)",
-						"Policy Makers vs Market Participant Assumptions | Indicative"
+						"Policy Makers vs Market Participant Assumptions"
 					]
 				},
 				{
 					"orderIndex": 5,
 					"content": [
 						"Table 4: Policy Likelihood Ranking (UK Budget)",
-						"Policy Makers + Market Participant Assumptions | Indicative"
+						"Policy Makers + Market Participant Assumptions"
 					]
 				},
 				{
 					"orderIndex": 6,
 					"content": [
 						"Table 5: Risk Pricing (Ukraine-Russia)",
-						"Most Over-Priced / Most Under-Priced Risks x 60 Days + 360 Days | Indicative"
+						"Most Over-Priced / Most Under-Priced Risks x 60 Days + 360 Days"
 					]
 				}
 			]
@@ -66,43 +66,46 @@
 			"tables": [
 				{
 					"centreDivide": true,
-
+					"columnWidths": ["5", "1.5", "1.5", "5"],
+					"alignFirstColumnLeft": true,
+					"alignLastColumnRight": true,
 					"headers": [
+						"Most Under-Priced\nMeasures",
 						"Scores",
-						"Scoring The Risk:\n Most Under-Priced\nMeasures",
-						"Scoring The Risk:\n Most Over-Priced\nMeasures",
-						"Scores"
+						"Scores",
+						"Most Over-Priced\nMeasures"
 					],
 					"rows": [
 						[
-							{ "type": "Score", "label": "Pricing", "value": "40%" },
 							"#1. Equalising Dividend Tax + Income Tax",
-							"#1. New 'Wealth Tax'",
-							{ "type": "Score", "label": "Pricing", "value": "50%" }
+							{ "type": "Score", "label": "Pricing", "value": "40%" },
+							{ "type": "Score", "label": "Pricing", "value": "50%" },
+							"#1. New 'Wealth Tax'"
 						],
 						[
-							{ "type": "Score", "label": "Pricing", "value": "35%" },
 							"#2. Equalising CGT + Income Tax",
-							"#2. Tax Threshold Freeze",
-							{ "type": "Score", "label": "Pricing", "value": "40%" }
+							{ "type": "Score", "label": "Pricing", "value": "35%" },
+							{ "type": "Score", "label": "Pricing", "value": "40%" },
+							"#2. Tax Threshold Freeze"
 						],
 						[
-							{ "type": "Score", "label": "Pricing", "value": "25%" },
 							"= #3. Cut in Tax Relief for pension contributions",
-							"#3. Fuel Duty Increase",
-							{ "type": "Score", "label": "Pricing", "value": "30%" }
-						],
-						[
 							{ "type": "Score", "label": "Pricing", "value": "25%" },
-							"= #3. VAT on Crypto Assets",
-							"#4. New top rate Income Tax",
-							{ "type": "Score", "label": "Pricing", "value": "25%" }
+							{ "type": "Score", "label": "Pricing", "value": "30%" },
+							"#3. Fuel Duty Increase"
 						],
 						[
-							{ "type": "Score", "label": "Pricing", "value": "20%" },
+							"= #3. VAT on Crypto Assets",
+							{ "type": "Score", "label": "Pricing", "value": "25%" },
+							{ "type": "Score", "label": "Pricing", "value": "25%" },
+							"#4. New top rate Income Tax"
+						],
+						[
 							"#5. Increase in Corporation Tax",
-							"#5. New Annual Property Tax",
-							{ "type": "Score", "label": "Pricing", "value": "20%" }
+							{ "type": "Score", "label": "Pricing", "value": "20%" },
+							{ "type": "Score", "label": "Pricing", "value": "20%" },
+
+							"#5. New Annual Property Tax"
 						]
 					]
 				}
@@ -110,14 +113,16 @@
 		},
 		{
 			"slide": 4,
-			"heading": "Risk Delta - Market vs Policymakers | Indicative",
+			"heading": "Risk Delta - U.K. Budget ‘25 | Indicative",
 			"methodology": [
 				"The data points are ranked and listed according to size of divergence between the Policy Maker expectation and Market Participant assumption re: Budget Measures at the Autumn fiscal event.",
 				"Determined by quantifying the assumptions of Market Participants via AI and aggregation tools vs the expectations of Policy Makers in our PolicyMakerPanel. This creates a variable by which to measure market pricing."
 			],
 			"tables": [
 				{
-					"headers": ["UK Budget Measures: Widest Margins", "Risk\n Margin", "Margin Scores"],
+					"headers": ["UK Budget Measures:\nWidest Margins", "Risk\n Margin", "Margin Scores"],
+					"alignFirstColumnLeft": true,
+					"columnWidths": ["5", "2", "2"],
 					"rows": [
 						[
 							"#1 New Wealth Tax",
@@ -150,7 +155,7 @@
 		},
 		{
 			"slide": 5,
-			"heading": "Policy Likelihood Ranking",
+			"heading": "Policy Likelihood Ranking | UK Budget ‘25 | Indicative",
 			"methodology": [
 				"The data points represent the views of Market Participants vs Policy Makers about the likelihood of policy outcomes in the Autumn fiscal event.",
 				"Determined by quantifying the assumptions of Market Participants via AI and aggregation tools vs the expectations of Policy Makers in our PolicyMakerPanel."
@@ -158,12 +163,12 @@
 			"tables": [
 				{
 					"centreDivide": true,
-
+					"columnWidths": ["3", "3", "5.5", "5.5", "3", "3"],
 					"headers": [
 						"Policymaker Assumptions (scores)",
 						"Policymaker Assumptions (category)",
-						"Policymaker View: (Measures)",
-						"Market Participant View: (Measures)",
+						"Policymaker View:\n(Measures)",
+						"Market Participant View:\n(Measures)",
 						"Market Assumptions (category)",
 						"Market Assumptions (scores)"
 					],
@@ -179,7 +184,7 @@
 						[
 							{ "type": "Score", "label": "Score", "value": "75%" },
 							{ "type": "Score", "label": "Category", "value": "High" },
-							"#2. Dividend Tax = Income Tax Enhanced",
+							"#2. Dividend Tax = Income Tax Equalised",
 							"#2. Property Tax Increases",
 							{ "type": "Score", "label": "Category", "value": "High" },
 							{ "type": "Score", "label": "Score", "value": "75%" }
@@ -195,7 +200,7 @@
 						[
 							{ "type": "Score", "label": "Score", "value": "70%" },
 							{ "type": "Score", "label": "Category", "value": "High" },
-							"#4. CGT = Income Tax",
+							"#4. CGT Rates = Income Tax",
 							"#4. New tax on Rental Income",
 							{ "type": "Score", "label": "Category", "value": "High" },
 							{ "type": "Score", "label": "Score", "value": "61%" }
@@ -214,14 +219,16 @@
 		},
 		{
 			"slide": 6,
-			"heading": "Combined Policy Likelihood Ranking",
+			"heading": "Policy Likelihood Ranking | UK Budget ‘25 | Indicative",
 			"methodology": [
 				"The data points reveal the most likely scores for policy outcomes - irrespective of owner - in the Autumn fiscal event.",
 				"Determined by quantifying the assumptions of Market Participants via AI and aggregation tools vs the expectations of Policy Makers in our PolicyMakerPanel"
 			],
 			"tables": [
 				{
-					"headers": ["UK Budget Measures: Top [5]", "Category", "Scores", "Owner"],
+					"alignFirstColumnLeft": true,
+					"columnWidths": ["5", "2", "2", "2"],
+					"headers": ["UK Budget Measures:\nTop [5]", "Category", "Scores", "Owner"],
 					"rows": [
 						[
 							"#1. Tax Threshold Freeze",
@@ -258,112 +265,49 @@
 			]
 		},
 		{
-			"slide": 7,
-			"heading": "Policy Risk Ranking",
-			"methodology": [
-				"The data points represent the biggest differentials between Policy Maker and Market Participants re: policy outcomes over 60 Days and 360 Days.",
-				"Determined by quantifying the assumptions of Market Participants via AI and aggregation tools vs the expectations of Policy Makers in our PolicyMakerPanel."
-			],
-			"tables": [
-				{
-					"centreDivide": true,
-
-					"headers": [
-						"Market View vs Policymaker View",
-						"Risk Margin (60 Days)",
-						"Scores (60 Days)",
-						"Risk Margin (360 Days)",
-						"Scores (360 Days)",
-						"Market View vs Policymaker View"
-					],
-					"rows": [
-						[
-							"#1 NATO: Article 5",
-							{ "type": "Score", "label": "Quintile Gap", "value": "2" },
-							{ "type": "Score", "label": "Nos", "value": "30%" },
-							{ "type": "Score", "label": "Nos", "value": "45%" },
-							{ "type": "Score", "label": "Quintile Gap", "value": "3" },
-							"Ceasefire in Place #1"
-						],
-						[
-							"#2. US-China Deal",
-							{ "type": "Score", "label": "Quintile Gap", "value": "2" },
-							{ "type": "Score", "label": "Nos", "value": "20%" },
-							{ "type": "Score", "label": "Nos", "value": "35%" },
-							{ "type": "Score", "label": "Quintile Gap", "value": "2" },
-							"US-China Deal #2"
-						],
-						[
-							"#2. China-RU Pressure",
-							{ "type": "Score", "label": "Quintile Gap", "value": "0" },
-							{ "type": "Score", "label": "Nos", "value": "15%" },
-							{ "type": "Score", "label": "Nos", "value": "30%" },
-							{ "type": "Score", "label": "Quintile Gap", "value": "2" },
-							"US-Russia Deal #3"
-						],
-						[
-							"#4. US-Ukraine Deal",
-							{ "type": "Score", "label": "Quintile Gap", "value": "0" },
-							{ "type": "Score", "label": "Nos", "value": "10%" },
-							{ "type": "Score", "label": "Nos", "value": "25%" },
-							{ "type": "Score", "label": "Quintile Gap", "value": "2" },
-							"China-RU Pressure #4"
-						],
-						[
-							"#5. No Ceasefire in Place",
-							{ "type": "Score", "label": "Quintile Gap", "value": "0" },
-							{ "type": "Score", "label": "Nos", "value": "5%" },
-							{ "type": "Score", "label": "Nos", "value": "15%" },
-							{ "type": "Score", "label": "Quintile Gap", "value": "1" },
-							"EU-Ukraine Membership #5"
-						]
-					]
-				}
-			]
-		},
-		{
 			"slide": 8,
 			"heading": "Ranking Risk Pricing: Russia vs. Ukraine | Indicative (60 Days)",
 			"tables": [
 				{
 					"centreDivide": true,
-
+					"alignFirstColumnLeft": true,
+					"alignLastColumnRight": true,
 					"headers": [
-						"Risk Pricing (Scores)",
 						"Most Under-Priced\nPolicy Measures",
-						"Most Over-Priced\nPolicy Measures",
-						"Risk Pricing (Scores)"
+						"Risk Pricing (Scores)",
+						"Risk Pricing (Scores)",
+						"Most Over-Priced\nPolicy Measures"
 					],
 					"rows": [
 						[
-							{ "type": "Score", "label": "Price", "value": "40%" },
 							"#1. Article 5. Triggered",
-							"#1. US-Ukraine Deal",
-							{ "type": "Score", "label": "Price", "value": "25%" }
-						],
-						[
-							{ "type": "Score", "label": "Price", "value": "30%" },
-							"#2. Ru grey-zone war Intensifies",
-							"=#3. Ru More Battlefield Gains",
-							{ "type": "Score", "label": "Price", "value": "20%" }
-						],
-						[
+							{ "type": "Score", "label": "Price", "value": "40%" },
 							{ "type": "Score", "label": "Price", "value": "25%" },
+							"#1. US-Ukraine Deal"
+						],
+						[
+							"#2. Ru grey-zone war Intensifies",
+							{ "type": "Score", "label": "Price", "value": "30%" },
+							{ "type": "Score", "label": "Price", "value": "20%" },
+							"=#3. Ru More Battlefield Gains"
+						],
+						[
 							"#3. EU Speed-Up UA Application",
-							"=#3. Ru Assets Unfrozen (Partial)",
-							{ "type": "Score", "label": "Price", "value": "20%" }
+							{ "type": "Score", "label": "Price", "value": "25%" },
+							{ "type": "Score", "label": "Price", "value": "20%" },
+							"=#3. Ru Assets Unfrozen (Partial)"
 						],
 						[
-							{ "type": "Score", "label": "Price", "value": "10" },
 							"#4. US Inc Weapons Transfers",
-							"#4. China increase Ru support",
-							{ "type": "Score", "label": "Price", "value": "15%" }
+							{ "type": "Score", "label": "Price", "value": "10%" },
+							{ "type": "Score", "label": "Price", "value": "15%" },
+							"#4. China increase Ru support"
 						],
 						[
-							{ "type": "Score", "label": "Price", "value": "10%" },
 							"#5. No More China Tariffs",
-							"#5. No Uprising in Russia",
-							{ "type": "Score", "label": "Price", "value": "10%" }
+							{ "type": "Score", "label": "Price", "value": "10%" },
+							{ "type": "Score", "label": "Price", "value": "10%" },
+							"#5. No Uprising in Russia"
 						]
 					]
 				}
@@ -375,42 +319,44 @@
 			"tables": [
 				{
 					"centreDivide": true,
+					"alignFirstColumnLeft": true,
+					"alignLastColumnRight": true,
 					"headers": [
-						"Policy Assumptions\n(Category)",
 						"Policymaker x Likelihood\n(60 Days)",
-						"Market Participant x Likelihood\n(60 Days)",
-						"Policymaker Assumptions\n(Category)"
+						"Policy Assumptions\n(Category)",
+						"Policymaker Assumptions\n(Category)",
+						"Market Participant x Likelihood\n(60 Days)"
 					],
 					"rows": [
 						[
+							"#1. China-Ru Support",
 							{ "type": "Score", "label": "Quintile", "value": "Very High" },
-							"#1. China-Ru Support",
-							"#1. China-Ru Support",
-							{ "type": "Score", "label": "Quintile", "value": "Very High" }
+							{ "type": "Score", "label": "Quintile", "value": "Very High" },
+							"#1. China-Ru Support"
 						],
 						[
+							"#2. No Ceasefire",
 							{ "type": "Score", "label": "Quintile", "value": "Very High" },
-							"#2. No Ceasefire",
-							"#2. No Ceasefire",
-							{ "type": "Score", "label": "Quintile", "value": "Very High" }
+							{ "type": "Score", "label": "Quintile", "value": "Very High" },
+							"#2. No Ceasefire"
 						],
 						[
-							{ "type": "Score", "label": "Quintile", "value": "High" },
 							"#3. Ru Increase Gray Zone Activity",
-							"#3. US-Ukraine Deal",
-							{ "type": "Score", "label": "Quintile", "value": "High" }
+							{ "type": "Score", "label": "Quintile", "value": "High" },
+							{ "type": "Score", "label": "Quintile", "value": "High" },
+							"#3. US-Ukraine Deal"
 						],
 						[
-							{ "type": "Score", "label": "Quintile", "value": "High" },
 							"#4. Article 5",
-							"#4. Ru Assets Unfrozen\n(partial)",
-							{ "type": "Score", "label": "Quintile", "value": "High" }
+							{ "type": "Score", "label": "Quintile", "value": "High" },
+							{ "type": "Score", "label": "Quintile", "value": "High" },
+							"#4. Ru Assets Unfrozen\n(partial)"
 						],
 						[
-							{ "type": "Score", "label": "Quintile", "value": "High" },
 							"#5. EU Speed-up UA Application",
-							"#5. Ru Battlefield Gains",
-							{ "type": "Score", "label": "Quintile", "value": "High" }
+							{ "type": "Score", "label": "Quintile", "value": "High" },
+							{ "type": "Score", "label": "Quintile", "value": "High" },
+							"#5. Ru Battlefield Gains"
 						]
 					]
 				}
